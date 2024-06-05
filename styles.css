@@ -1,0 +1,458 @@
+body {
+    margin: 0px;
+}
+
+/* TEKST STIJLEN */
+@font-face {
+    font-family: Titel;
+    src: url('LeagueSpartan-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Menu;
+    src: url('Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Tekst;
+    src: url('Montserrat-Light.ttf') format('truetype');
+}
+
+.highlight {
+    color: #AE94DD;
+}
+
+/* INTRO */
+
+/* Aanvraag button 1 */
+.aanvraag1-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* centreert de button in de banner */
+    
+    background-color: #AE94DD;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 20px;
+    cursor: pointer;
+    
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.aanvraag1-button:hover {
+    background-color: #374D5D;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    height: 300px;
+}
+
+.banner img {
+    height: 300px;
+    width: 100%;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0px;
+    
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+}
+
+/* Voorstelfoto */
+.voorstelfoto {
+    position: absolute;
+    height: 14.25%;
+    top: 10%;
+    left: 2.5%;
+}
+
+/* Social media links */
+.socialmedia-container {
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+    margin-top: 3%;
+    margin-left: 2.5%;
+}
+
+.facebook,
+.instagram,
+.linkedin {
+    height: 30px;
+    width: 30px;
+}
+
+/* Intro tekst */
+.intro-uitlegtekst {
+    margin-left: 200px;
+        
+    font-family: 'Tekst';
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/* Achtergrond blok */
+.uitleg-blok {
+    display: flex;
+    background-color: #374D5D;
+}
+
+/* PRODUCTEN */
+
+/* Header */
+.producttekst-container {
+    display: grid;
+    grid-template-columns: 70%;
+    margin: 60px 2.5%;
+}
+
+/* Product titel */
+.product-titel {
+    grid-row: 1;
+    
+    font-family: 'Titel';
+    font-size: 100px;
+    color: #374D5D;
+}
+
+/* Quiz button */
+.quiz-button {
+    margin: 20px 20px;
+        
+    background-color: #AE94DD;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+            
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.quiz-button:hover {
+    background-color: #374D5D;
+}
+
+/* Product tekst */
+.product-uitlegtekst {
+    grid-column: 1 /span 2;
+
+    font-family: 'Tekst';
+    font-size: 20px;
+    color: #374D5D;
+}
+
+/* Product kaarten */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(415px, 1fr));
+    column-gap: 140px;
+    row-gap: 50px;
+    margin: 60px 2.5%;
+}
+
+    /* Kaart */
+    .product-card {
+        display: grid;
+        grid-template-columns: 115px;
+        width: 365px;
+        padding: 25px;
+
+        border-radius: 10px;
+        background-color: #BFCCD8;
+    }
+
+    /* Kaart afbeeldingen */
+    .moodboard,
+    .kleur-materiaal,
+    .beeld,
+    .verlichting,
+    .plattegrond,
+    .meubel {
+        height: 115px;
+        width: 115px;
+        border-radius: 10px;
+    }
+
+    /* Kaart details */
+    .card-price {
+        display: flex;
+        align-items: center; /* verticaal in center */
+        justify-content: center; /* horizontaal in center*/
+        
+        font-family: 'Menu';
+        font-size: 25px;
+        color: #374D5D;
+    }
+
+    .card-header {
+        grid-column: 1 /span 2;
+        margin-top: 20px;
+        
+        font-family: 'Menu';
+        font-size: 25px;
+        color: #374D5D;
+    }
+
+    .card-text {
+        grid-column: 1 /span 2;
+        
+        font-family: 'Tekst';
+        font-size: 20px;
+        color: #374D5D;
+    }
+
+/* VOORSTELLEN */
+
+/* Achtergrond blok */
+.Voorstellen-onderdeel {
+    display: grid;
+    background-color: #374D5D;
+}
+
+/* Aanvraag button 2 */
+.aanvraag2-button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin: 30px 650px;
+        
+    background-color: #AE94DD;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 20px;
+    cursor: pointer;
+        
+    font-size: 25px;
+    color: #ffffff;
+}
+    
+.aanvraag2-button:hover {
+    background-color: #374D5D;
+}
+
+/* Logo afbeeldingen */
+.logo-container {
+    display: grid;
+    grid-row-start: 2;
+    grid-row-end: 5;
+    row-gap: 10%;
+    margin-left: 100px;
+}
+
+.profiel,
+.sintlucas,
+.perk {
+    width: 180px;
+}
+
+/* Voorstel tekst */
+.voorsteltekst-container {
+    margin: 30px 50px;
+}
+
+    /* Voorstel tekst details */
+    .voorstel-titel {
+        font-family: 'Titel';
+        font-size: 100px;
+        color: #ffffff;
+    }
+        
+    .voorstel-tekst {
+        font-family: 'Tekst';
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+/* PROJECTEN */
+
+/* Achtergrond blok */
+.Projecten-onderdeel {
+    display: grid;
+    gap: 30%;
+    margin: 60px 2.5%;
+}
+
+/* Project header */
+.project-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+    /* Project header details */
+    .project-titel {
+        font-family: 'Titel';
+        font-size: 100px;
+        color: #374D5D;
+    }
+
+    /* Meer projecten button */
+    .project-button {
+        margin: auto;
+        margin-right: 0px;
+        
+        background-color: #AE94DD;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 10px 20px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .project-button:hover {
+        background-color: #374D5D;
+    }
+
+    a:link, a:visited {
+        font-size: 25px;
+        color: #ffffff;
+        font-family: 'Tekst';
+        font-weight: 600;
+    }
+
+/* Project afbeeldingen */
+.project-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+
+.project-images img:hover {
+    filter: brightness(50%);
+}
+
+.project1,
+.project2,
+.project3,
+.project4,
+.project5,
+.project6 {
+    height: 115px;
+    width: 115px;
+    border-radius: 10px;
+}
+
+/* EXTRA */
+
+/* Whatsapp logo */
+.whatsapp {
+    border-radius: 45%;
+    height: 80px;
+    margin-top: 3px;
+}
+
+.Whatsapp-button {
+    border-radius: 50%;
+    background-color: #33D951;
+    border: none;
+    position: fixed;
+    top: 90%;
+    left: 93%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Witruimte pagina*/
+.blankspace {
+    height: 100px;
+}
+
+/* 
+Projecten pagina -----------------------------------------------------------------------------------------
+*/
+
+/* Header */
+.projectpage-headercontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Adjust as needed */;
+    align-items: center;
+    margin: 40px;
+}
+    /* Header details */
+    .logo {
+        height: 100px;
+    }
+
+    .projectpage-titel {
+        text-align: right;
+
+        font-family: 'Titel';
+        font-size: 100px;
+        color: #374D5D;
+    }
+
+/* Project kaarten */
+.productpage-cardcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(228px, 1fr)); /* Adjust as needed */
+    column-gap: 90px;
+    row-gap: 50px;
+    margin: 60px 2.5%;
+}
+
+    /* Kaart */
+    .productpage-card {
+        display: grid;
+        place-items:center;
+
+        padding: 25px;
+        border-radius: 10px;
+        background-color: #EDEDED;
+    }
+
+    /* Kaart details */
+    .picture {
+        height: 130px;
+        border-radius: 10px;
+    }
+
+    .productpage-cardheader {
+        margin: 20px;
+        
+        font-family: 'Menu';
+        font-size: 25px;
+        color: #374D5D;
+    }
+
+    .productpage-cardtext {
+        margin: 0px;
+        text-align: center;
+
+        font-family: 'Tekst';
+        font-size: 20px;
+        color: #374D5D;
+    }
+
+/* EXTRA */
+.terug-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    
+    background-color: #AE94DD;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.terug-button:hover {
+    background-color: #374D5D;
+}
+
+a:link, a:visited {
+    font-size: 25px;
+    color: #ffffff;
+    font-family: 'Tekst';
+    font-weight: 600;
+}
